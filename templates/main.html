@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <link href="{{ url_for('static', filename='style.css')}}" rel="stylesheet" type="text/css">
+        <script src="{{ url_for('static', filename='script.js')}}"></script>
+        <title>Иван Малинов</title>
+    </head>
+    <body>
+        <main>
+            <div class="main" id="main">
+                <h2>.</h2>
+                <h3>ФОТОГРАФ</h3>
+                <h1>ИВАН МАЛИНОВ</h1>
+                <p>Хранитель приятных моментов</p> 
+            </div>
+            <div class="line"></div>
+            <div class="aboutme" id="aboutme">
+                <img src="{{ url_for('static', filename='images/aboutme.jpg')}}">
+                <h1>ОБО МНЕ</h1>
+                <p>Привет! Меня зовут Иван Малинов. Мне нравится фотография. 
+                    Занимаюсь ею с 2014 года. 
+                    Мои фотографий могут показать красоту и историю, той или иной фотографий.
+                </p>
+            </div>
+            <div class="line"></div>
+            <div class="portfolio" id="portfolio">
+                <img src="{{ url_for('static', filename='images/mainmary.jpg')}}" class="mainphoto" id="imageMain">
+                <h1>ПОРТФОЛИО</h1>
+                <div class="image_link">
+                    <button onclick="maryImages()" id="btnimg1">Свадьба</button>
+                    <button onclick="lsImages()" id="btnimg2">Love Story</button>
+                    <button onclick="portImages()" id="btnimg3">Портрет</button>
+                </div>
+                <img src="{{ url_for('static', filename='images/mary1.jpg')}}" class="photos" id="image1">
+                <img src="{{ url_for('static', filename='images/mary3.jpg')}}" class="photos" id="image2">
+            </div>
+            <div class="line"></div>
+            <div class="price" id="price">
+                <h1>ТАРИФЫ</h1>
+                <div class="costs">
+                <div class="cost1">
+                    <h1>ИНДИВИДУАЛЬНАЯ СЪЕМКА</h1>
+                    <ul>
+                        <li>Помощь в подборе образа и места</li>
+                        <li>Помощь в позирований</li>
+                        <li>До 2х часов съемки</li>
+                        <li>До 30 фотографий в ретуши</li>
+                        <li>Все удачные исходники</li>
+                        <li>Срок сдачи до 2х недель</li>
+                    </ul>
+                    <h2>10000 рублей</h2>
+                    <a href="#submit">Записаться</a>
+                </div>
+                <div class="cost2">
+                    <h1>СЕМЕЙНАЯ/LOVE STORY</h1>
+                    <ul>
+                        <li>Помощь в подборе образа и места</li>
+                        <li>Помощь в позирований</li>
+                        <li>До 2,5х часов съемки</li>
+                        <li>До 40 фотографий в ретуши</li>
+                        <li>Все удачные исходники</li>
+                        <li>Срок сдачи до 3х недель</li>
+                    </ul>
+                    <h2>15000 рублей</h2>
+                    <a href="#submit">Записаться</a>
+                </div>
+                <div class="cost3">
+                    <h1>МЕРОПРИЯТИЯ</h1>
+                    <ul>
+                        <li>Выезд на место проведения</li>
+                        <li>Помощь в позирований</li>
+                        <li>Групповые и индивидуальные фото в пределах мероприятия</li>
+                        <li>До 40 фотографий в ретуши</li>
+                        <li>Все удачные исходники</li>
+                        <li>Срок сдачи до 5 недель</li>
+                    </ul>
+                    <h2>20000 рублей</h2>
+                    <a href="#submit">Записаться</a>
+                </div>
+            </div>
+            </div>
+            <div class="line"></div>
+            <div class="reviews" id="reviews">
+                <img src="{{ url_for('static', filename='images/review1.jpg')}}">
+                <h1>ОТЗЫВ</h1>
+                <h2>Елена</h2>
+                <p>Привет. 
+                    Хочу сказать спасибо Ивану за прекрасную фотосессию. 
+                    Он мне помог выбрать место и позу для фотосессий.
+                </p>
+                <p>Он мне прислал 30 фотографий, которые оказались удачными. 
+                    От этой фотосессий получила удовольствие. 
+                    Ещё раз скажу Ивану спасибо.
+                </p>
+            </div>
+            <div class="line"></div>
+        </main>
+        <footer>
+            <div class="submit" id="submit">
+                <h1>СВЯЖИТЕСЬ СО МНОЙ</h1>
+                <p>Понравились мои работы? Оставьте заявку и я с вами свяжусь.</p>
+                <form id="form" action="{{ url_for('second_page') }}" method="POST">
+                    <input type="tel" id="phone" name="phone" placeholder="+7-___-___-__-__">
+                    <input type="text" id="name" name="name" placeholder="Ваше имя">
+                    <p></p>
+                    <input type="submit" id="sub" value="Отправить заявку">
+                </form>
+            </div>
+        </footer>
+        <div class="line"></div>
+    </body>
+</html>

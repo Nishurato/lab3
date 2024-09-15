@@ -1,0 +1,577 @@
+@media (min-width: 1280px) {
+    body {
+        margin: 0px;
+        font-family: 'IBM Plex Sans', sans-serif;
+    }
+    
+    footer {
+        background-color: black;
+        color: white;
+    }
+    
+    footer h1 {
+        margin-top: 0;
+        margin-left: 5%;
+        margin-bottom: 10px;
+    }
+    
+    footer p, footer button, footer input {
+        margin-left: 5%;
+        font-size: 36px;
+    }
+    
+    h1 {
+        font-size: 96px;
+        font-weight: 400;
+    }
+    
+    a:link {
+        color: white;
+        text-decoration: none;
+    }
+    
+    a:visited {
+        color: white;
+    }
+    
+    a:hover {
+        color: rgb(206, 206, 206);
+    }
+    
+    .main {
+        background-image: url(images/main.jpg);
+        background-repeat: no-repeat;
+        background-size: auto 150%;
+        background-attachment: scroll;
+        background-position: 0px -300px;
+        height: 826px;
+        color: white;
+    }
+    
+    .main h3{
+        margin: 0;
+        margin-left: 5%;
+        margin-top: 0px;
+        font-size: 32px;
+        font-weight: 400;
+    }
+    
+    .main h2 {
+        color: transparent;
+        margin-bottom: 600px;
+    }
+    
+    .main h1{
+        margin: 0;
+        margin-left: 5%;
+        margin-top: -30px;
+        font-size: 96px;
+        font-weight: 400;
+    }
+    
+    .main p{
+        margin: 0;
+        margin-left: 5%;
+        margin-top: -30px;
+        font-size: 32px;
+        font-weight: 300;
+        
+    }
+    
+    .line {
+        height: 5px;
+    }
+    
+    .aboutme {
+        margin: 0;
+        background-color: black;
+        color: white;
+        height: 550px;
+    }
+    
+    .aboutme img{
+        float: left;
+    }
+    
+    .aboutme h1 {
+        margin-top: 0;
+        margin-left: 22%;
+        font-size: 96px;
+        text-decoration: underline;
+    }
+    
+    .aboutme p {
+        font-weight: 300;
+        margin-top: 0;
+        margin-left: 22%;
+        font-size: 36px;
+        width: 1200px;
+        max-width: fit-content;
+    }
+    
+    .portfolio {
+        background-color: black;
+        color: white;
+        height: 800px;
+    }
+    
+    .portfolio h1 {
+        margin-top: 0;
+        margin-left: 5%;
+        font-size: 96px;
+        text-decoration: underline;
+    }
+    
+    .photos {
+        margin-top: 25px;
+        margin-left: 5%;
+        max-width: 15%;
+        height: auto;
+    }
+    
+    .image_link {
+        margin-left: 5%;
+    }
+    
+    .image_link button {
+        margin-top: 0;
+        margin-right: 2%;
+        font-size: 30px;
+        background-color: black;
+        color: white;
+        border-style: solid;
+        cursor: pointer;
+    }
+
+    .image_link button:hover {
+        color: white;
+        text-decoration: underline;
+    }
+
+    .image_link button#btnimg1{
+        text-decoration: underline;
+    }
+    
+    .mainphoto{
+        float: right;
+        max-width: 100%;
+        height: 800px;
+    }
+    
+    .photos {
+        width: 279px;
+        height: 418px;
+        position: center;
+        object-fit: cover;
+    }
+    
+    .price {
+        background-color: black;
+        color: white;
+        height: 800px;
+    }
+    
+    .price h1 {
+        margin: 0;
+        text-align: center;
+        text-decoration: underline;
+    }
+    
+    .cost1, .cost2, .cost3 {
+        margin-top: 100px;
+        width: 400px;
+        position: absolute;
+        border: solid;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        height: 420px;
+        text-align: center;
+    }
+    
+    .cost1 h1, .cost2 h1, .cost3 h1 {
+        margin-top: 10px;
+        font-size: 40px;
+        height: 105px;
+    }
+    
+    .cost1 h2, .cost2 h2, .cost3 h2 {
+        font-size: 28px;
+        font-weight: 400;
+    }
+    
+    .cost1 a, .cost2 a, .cost3 a {
+        font-size: 28px;
+        font-weight: 400;
+        border: solid white;
+        padding: 10px 120px 10px 120px;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+    
+    .cost1 ul, .cost2 ul, .cost3 ul {
+        height: 140px;
+    }
+
+    .cost1 {
+        left: -850px;
+        right: 0;
+    }
+
+    .cost3 {
+        left: 850px;
+        right: 0;
+    }
+    
+    .cost1 li, .cost2 li, .cost3 li {
+        text-align: left;
+    }
+    
+    .reviews { 
+        background-color: black;
+        color: white;
+        height: 800px;
+    }
+    
+    .reviews h1 {
+        margin: 0;
+        margin-left: 5%;
+        text-decoration: underline;
+    }
+    
+    .reviews h2 {
+        margin-left: 5%;
+        font-size: 48px;
+        margin-bottom: 0;
+    }
+    
+    .reviews p {
+        margin-left: 5%;
+        font-size: 30px;
+        width: 900px;
+    }
+    
+    .reviews img{
+        float: right;
+    }
+    
+    input#phone, input#name{
+        background-color: black;
+        color: white;
+        border: 0;
+        border-bottom: 5px;
+        border-color: white;
+        border-style: solid;
+    }
+    
+    input#sub{
+        background-color: black;
+        color: white;
+        border: 5px;
+        border-color: white;
+        border-style: solid;
+        border-radius: 10px;
+        padding: 20px 50px;
+        cursor: pointer;
+        margin-bottom: 25px;
+    }
+    
+    footer .button{
+        display: inline-block;
+    }
+
+    form {
+        margin: 0;
+    }
+}
+
+@media (max-width: 1280px){
+    body {
+        margin: 0px;
+        font-family: 'IBM Plex Sans', sans-serif;
+    }
+    
+    h1 {
+        font-size: 48px;
+        font-weight: 400;
+    }
+    
+    a:link {
+        color: white;
+        text-decoration: none;
+    }
+    
+    a:visited {
+        color: white;
+    }
+    
+    a:hover {
+        color: rgb(206, 206, 206);
+    }
+    
+    .main {
+        background-image: url(images/main.jpg);
+        background-repeat: no-repeat;
+        background-size: auto 150%;
+        background-attachment: scroll;
+        background-position: center -300px;
+        height: 826px;
+        color: white;
+    }
+    
+    .main h3{
+        margin: 0;
+        margin-left: 5%;
+        margin-top: 0px;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    
+    .main h2 {
+        color: transparent;
+        margin-bottom: 650px;
+    }
+    
+    .main h1{
+        margin: 0;
+        margin-left: 5%;
+        margin-top: -15px;
+        font-size: 64px;
+        font-weight: 400;
+    }
+    
+    .main p{
+        margin: 0;
+        margin-left: 5%;
+        margin-top: -15px;
+        font-size: 20px;
+        font-weight: 300;
+    }
+    
+    .line {
+        height: 5px;
+    }
+    
+    .aboutme {
+        margin: 0;
+        background-color: black;
+        color: white;
+        height: auto;
+    }
+    
+    .aboutme img{
+        float: none;
+        height: 650px;
+        width: 100%;
+        object-fit: cover;
+        object-position: 100% 0%;
+    }
+    
+    .aboutme h1 {
+        text-align: center;
+        font-size: 64px;
+        text-decoration: underline;
+        margin: 0;
+    }
+    
+    .aboutme p {
+        font-weight: 300;
+        margin-top: 0;
+        font-size: 24px;
+        width: 1200px;
+        margin-bottom: 0;
+        max-width: fit-content;
+        text-align: center;
+    }
+    
+    .portfolio {
+        background-color: black;
+        color: white;
+        height: 800px;
+    }
+    
+    .portfolio h1 {
+        margin-top: 0;
+        margin-left: 5%;
+        margin-bottom: 25px;
+        font-size: 64px;
+        text-decoration: underline;
+        text-align: center;
+    }
+    
+    .photos {
+        visibility:hidden;
+    }
+    
+    .image_link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .image_link button {
+        margin-top: 0;
+        font-size: 30px;
+        background-color: black;
+        color: white;
+        border-style: solid;
+        cursor: pointer;
+    }
+
+    .image_link button:hover {
+        color: white;
+        text-decoration: underline;
+    }
+
+    .image_link button#btnimg1{
+        text-decoration: underline;
+    }
+    
+    .mainphoto{
+        float: none;
+        max-width: 100%;
+        height: 600px;
+        width: 100%;
+        position: center;
+        object-fit: cover;
+        object-position: 100% 0%;
+    }
+    
+    .price {
+        background-color: black;
+        color: white;
+        height: 1450px;
+    }
+    
+    .price h1 {
+        margin: 0;
+        text-align: center;
+        text-decoration: underline;
+    }
+    
+    .cost1, .cost2, .cost3 {
+        margin-top: 25px;
+        width: 450px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: solid;
+        height: 420px;
+        text-align: center;
+    }
+    
+    .cost1 h1, .cost2 h1, .cost3 h1 {
+        margin-top: 10px;
+        font-size: 40px;
+        height: 105px;
+    }
+    
+    .cost1 h2, .cost2 h2, .cost3 h2 {
+        font-size: 28px;
+        font-weight: 400;
+    }
+    
+    .cost1 a, .cost2 a, .cost3 a {
+        font-size: 28px;
+        font-weight: 400;
+        border: solid white;
+        padding: 10px 130px 10px 130px;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+    
+    .cost1 ul, .cost2 ul, .cost3 ul {
+        height: 140px;
+    }
+    
+    .cost1 li, .cost2 li, .cost3 li {
+        text-align: left;
+    }
+    
+    .reviews { 
+        background-color: black;
+        color: white;
+        height: auto;
+    }
+    
+    .reviews h1 {
+        margin: 0;
+        margin-left: 5%;
+        text-decoration: underline;
+        text-align: center;
+    }
+    
+    .reviews h2 {
+        margin-left: 5%;
+        font-size: 40px;
+        margin-bottom: 0;
+        
+    }
+    
+    .reviews p {
+        margin-left: 5%;
+        font-size: 24px;
+        width: 900px;
+        margin-bottom: 0;
+        max-width: fit-content;
+    }
+    
+    .reviews img{
+        height: 412px;
+        width: 100%;
+        object-fit: cover;
+        object-position: 100% 0%;
+    }
+
+    footer {
+        background-color: black;
+        color: white;
+        height: 400px;
+    }
+    
+    footer h1 {
+        margin-top: 0;
+        margin-left: 5%;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    
+    footer p, footer button, footer input {
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 24px;
+    }
+
+    footer input {
+        margin-bottom: 20px;
+    }
+    
+    input#phone, input#name{
+        background-color: black;
+        color: white;
+        border: 0;
+        border-bottom: 5px;
+        border-color: white;
+        border-style: solid;
+    }
+    
+    input#sub{
+        background-color: black;
+        color: white;
+        border: 5px;
+        border-color: white;
+        border-style: solid;
+        border-radius: 10px;
+        padding: 20px 50px;
+        cursor: pointer;
+        margin-bottom: 0px;
+    }
+
+    form {
+        margin: 0;
+    }
+}
