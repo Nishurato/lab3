@@ -6,7 +6,7 @@ import datetime
 
 app = Flask(__name__)
 
-conn = psycopg2.connect(dbname="site", user="postgres", password="ma0505", host="127.0.0.1")
+conn = psycopg2.connect(dbname="site", user="postgres", password="ma0505", host="localhost")
 cursor = conn.cursor()
 
 conn.autocommit = True
@@ -22,7 +22,7 @@ if __name__== 'main':
 def second_page():
     phone_data = request.form["phone"]
     name_data = request.form["name"]
-    cursor.execute("INSERT INTO usersite (name, tel, date) VALUES (%s, %s, %s)", (name_data, phone_data, datetime.datetime.now()))
+    cursor.execute('INSERT INTO usersite (name, tel, date) VALUES (%s, %s, NOW())', (name_data, phone_data))
     cursor.close()
     conn.close()
     return render_template("page2.html")
